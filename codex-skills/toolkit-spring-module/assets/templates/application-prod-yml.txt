@@ -1,0 +1,40 @@
+# 生产环境配置
+# 数据库配置
+cmiot.datasource.ip: {datasource-ip}
+cmiot.datasource.username: {datasource-username}
+cmiot.datasource.password: {datasource-password}
+cmiot.datasource.database: {datasource-database}
+
+# 命名空间
+cmiot.nacos.namespace: {nacos-namespace}
+
+# redis配置
+spring:
+  data:
+    redis:
+      cluster:
+        nodes: {redis-nodes}
+      password: {redis-password}
+      timeout: 5000
+      database: 10
+
+fdfs:
+  thumb-image.width: 150
+  thumb-image.height: 150
+  tracker-list: {fdfs-tracker}
+
+xxl:
+  job:
+    admin:
+      addresses: {xxl-admin-addresses}
+      userName: {xxl-admin-username}
+      password: {xxl-admin-password}
+    accessToken: {xxl-access-token}
+    executor:
+      jobGroup: {xxl-job-group}
+      appname: {backend-prefix}-{module-name}
+      address:
+      ip:
+      port: {xxl-executor-port}
+      logpath: /opt/app/xxl-job/log
+      logretentiondays: 30

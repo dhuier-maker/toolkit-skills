@@ -1,0 +1,4 @@
+interface:
+  display_name: "视觉素材生成器"
+  short_description: "生成 PNG、SVG、图表、图标和背景等视觉素材"
+  default_prompt: "使用 $toolkit-visual-asset-generator，按照当前项目约定帮我完成这项任务。"

@@ -1,0 +1,155 @@
+{
+  "skill_name": "toolkit-rapid-ui-prototyper",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a landing page for my new AI startup with hero section, features grid showing 6 key capabilities, and a pricing table with 3 tiers. Make it look modern and techy.",
+      "expected_output": "A complete landing page with hero, features grid, and pricing table. Should have modern tech aesthetic with proper responsive layout.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Build a simple todo app UI with a header, input field for new tasks, a list showing existing tasks with checkbox and delete button, and a footer with task count.",
+      "expected_output": "A functional todo app interface with all interactive elements: input, checkboxes, delete buttons, and task counter.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Design a login page for an e-commerce site - needs username/email field, password field with show/hide toggle, remember me checkbox, and a prominent login button plus social login options.",
+      "expected_output": "Complete login page mockup with form validation states, password visibility toggle, and social auth buttons.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Create a user registration form with fields: full name, email, password, confirm password, phone number, date of birth, and a terms agreement checkbox. Include validation hints for each field.",
+      "expected_output": "Complete registration form with all fields, inline validation messages, password strength indicator, and submit button.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Build an admin dashboard with: sidebar navigation (Dashboard, Users, Products, Orders, Settings), top header with user profile and notifications, 4 stat cards showing key metrics, and a data table listing recent orders with columns: ID, Customer, Product, Amount, Status, Date.",
+      "expected_output": "Full dashboard layout with sidebar, header, KPI cards, and sortable/filterable data table.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Design a product listing page for a fashion store: grid of 9 product cards (image, name, price, rating stars), filter sidebar on the left (category, size, color, price range), and a购物车 floating button with item count badge.",
+      "expected_output": "E-commerce product listing with filters, product grid, and cart icon with badge.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Create a settings page for a SaaS app with sections: Profile (avatar, name, email), Notifications (email, push, SMS toggles), Security (change password, 2FA), and Billing (plan info, payment method). Use a tab or accordion layout.",
+      "expected_output": "Settings page with grouped sections, form controls (inputs, toggles, selects), and save/cancel buttons.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Build a data visualization dashboard showing: a line chart for user growth over 12 months, a donut chart for traffic sources, and 3 KPI cards (Total Users, Revenue, Conversion Rate). Use a clean, modern dark theme.",
+      "expected_output": "Analytics dashboard with chart placeholders (line, donut), KPI cards, all in dark theme styling.",
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "Design a mobile-first profile page with: circular avatar with edit overlay, bio text, stats row (posts/followers/following), and a grid of 9 posts with like counts. Include tab bar at bottom (Home, Search, Add, Notifications, Profile).",
+      "expected_output": "Social media profile optimized for mobile with avatar, stats, post grid, and bottom navigation.",
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Create a checkout flow page with: order summary (product thumbnails, names, quantities, prices), shipping address form, payment method selection (credit card form), and order total with tax and shipping breakdown.",
+      "expected_output": "E-commerce checkout page with cart summary, address form, payment section, and order totals.",
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "Build an empty state for a project management app - show an illustration placeholder, message 'No tasks yet', and a prominent 'Create First Task' button. Make it encouraging and visually balanced.",
+      "expected_output": "Well-designed empty state with icon, message, and CTA button.",
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "Design a FAQ/Help center page with: search bar at top, categories accordion (Getting Started, Account, Billing, Technical), each category expandable to show Q&A pairs. Include a 'Contact Support' card at the bottom.",
+      "expected_output": "Help center with search, categorized FAQ accordion, and contact CTA.",
+      "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "Build a B2B user management table with columns: Name, Email, Role (dropdown), Status (Active/Inactive), Last Login, Actions. Add filters for role and status, search bar, and pagination with 10/25/50 per page options. Include 'Add User' button in header.",
+      "expected_output": "Full CRUD table with filters, search, sorting, pagination, and action buttons.",
+      "files": []
+    },
+    {
+      "id": 14,
+      "prompt": "Create an invoice management page: table with Invoice #, Client, Amount, Issue Date, Due Date, Status (Paid/Pending/Overdue), plus filter by status and date range. Include bulk select checkbox, 'Export' button, and a summary showing total outstanding amount.",
+      "expected_output": "Invoice table with filters, bulk actions, and financial summary.",
+      "files": []
+    },
+    {
+      "id": 15,
+      "prompt": "Design a multi-step wizard for creating a new project: Step 1 - Project Info (name, description, client), Step 2 - Team Members (add/remove people with roles), Step 3 - Settings (visibility, notifications), Step 4 - Review & Create. Show progress bar and step navigation.",
+      "expected_output": "4-step wizard with progress indicator, form validation, and step navigation.",
+      "files": []
+    },
+    {
+      "id": 16,
+      "prompt": "Build a Kanban board for project management with 4 columns: Backlog, In Progress, Review, Done. Each card shows: title, assignee avatar, priority tag (Low/Medium/High), due date. Support drag-and-drop visual feedback and 'Add Card' button per column.",
+      "expected_output": "Kanban board with cards, columns, and add-card functionality.",
+      "files": []
+    },
+    {
+      "id": 17,
+      "prompt": "Create a role permissions matrix table: rows are features (Dashboard, Users, Billing, Reports, Settings), columns are roles (Admin, Manager, Member, Viewer). Each cell has a checkbox for create/read/update/delete permissions. Include 'Save Changes' button.",
+      "expected_output": "Permissions matrix with checkboxes and role-based access control.",
+      "files": []
+    },
+    {
+      "id": 18,
+      "prompt": "Build an audit log page: timeline view showing who did what (User, Action, Resource, Timestamp). Filter by user, action type, and date range. Color-coded action types (Create=green, Update=blue, Delete=red). Infinite scroll loading.",
+      "expected_output": "Audit log timeline with filters, color coding, and infinite scroll.",
+      "files": []
+    },
+    {
+      "id": 19,
+      "prompt": "Design a mobile chat conversation screen: message bubbles (sent=right/blue, received=left/gray), timestamp grouping, text input bar at bottom with send button, and a header showing contact name and online status indicator.",
+      "expected_output": "Chat UI with message bubbles, timestamps, and message input.",
+      "files": []
+    },
+    {
+      "id": 20,
+      "prompt": "Create a mobile feed/story view like Instagram: horizontal story strip at top (avatars with colored ring), vertical scrolling feed below with post header (avatar, username, location), image/video content, action buttons (like, comment, share), and like count.",
+      "expected_output": "Social media feed with stories carousel and post interactions.",
+      "files": []
+    },
+    {
+      "id": 21,
+      "prompt": "Build a mobile bottom sheet component: handle bar at top, section title, list of actions/items with icons, optional subtitle text. Should support swipe-down to dismiss and have rounded top corners.",
+      "expected_output": "Bottom sheet with handle, items list, and dismiss gesture.",
+      "files": []
+    },
+    {
+      "id": 22,
+      "prompt": "Design a mobile file manager: folder tree on left, file list on right, breadcrumb navigation at top. Items show icon, name, size, modified date. Support long-press context menu (Open, Rename, Delete, Share) and pull-to-refresh.",
+      "expected_output": "File manager with tree view, file list, and context actions.",
+      "files": []
+    },
+    {
+      "id": 23,
+      "prompt": "Create an onboarding flow for a mobile app: 4 swipeable screens with illustration, title, and description. Dot indicators at bottom, 'Skip' button top-right, 'Next' button bottom. Final screen has 'Get Started' CTA instead of 'Next'.",
+      "expected_output": "Onboarding carousel with skip, next, and final CTA.",
+      "files": []
+    },
+    {
+      "id": 24,
+      "prompt": "Build a mobile settings page with grouped sections: Account (Profile photo, Name, Email), Notifications (toggles for push/email/SMS), Privacy (visibility, blocking), About (version, terms, logout). Each group in a card with dividers.",
+      "expected_output": "Mobile settings with grouped sections, toggles, and action rows.",
+      "files": []
+    },
+    {
+      "id": 25,
+      "prompt": "Design a pull-to-refresh list with: section header showing 'Updated just now', list items with avatar, title, subtitle, and chevron. Show loading spinner animation when pulling down. Include floating action button for adding new item.",
+      "expected_output": "List with pull-to-refresh, section headers, and FAB.",
+      "files": []
+    }
+  ]
+}

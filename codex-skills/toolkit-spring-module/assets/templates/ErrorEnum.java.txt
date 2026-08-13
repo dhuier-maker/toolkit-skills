@@ -1,0 +1,35 @@
+package com.funo.project.{module-name}.enums;
+
+/**
+ * {description} 错误枚举
+ *
+ * @author author
+ */
+public enum {EntityName}ErrorEnum {
+
+    SUCCESS("0", "成功"),
+    DATABASE_ERROR("-1", "数据入库失败"),
+    PARAM_ERROR("-2", "参数错误"),
+    NOT_FOUND("-3", "数据不存在"),
+    NAME_REPEAT("-4", "名称重复"),
+    NO_PERMISSION("-5", "无权限操作"),
+    STATUS_ERROR("-6", "状态错误"),
+    ;
+
+    {EntityName}ErrorEnum(String code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
+
+    private String code;
+    private String msg;
+
+    public String getCode() {
+        return this.code;
+    }
+
+    public String getMsg() {
+        return this.msg;
+    }
+
+}

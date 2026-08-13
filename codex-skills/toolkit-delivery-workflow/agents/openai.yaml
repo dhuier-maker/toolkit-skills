@@ -1,0 +1,4 @@
+interface:
+  display_name: "软件交付工作流"
+  short_description: "协调需求到交付的端到端软件开发流程"
+  default_prompt: "使用 $toolkit-delivery-workflow，按照当前项目约定帮我完成这项任务。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "可编辑演示文稿"
+  short_description: "创建文字可编辑、基于 SVG 的高质量 PPTX"
+  default_prompt: "使用 $toolkit-editable-presentation，按照当前项目约定帮我完成这项任务。"

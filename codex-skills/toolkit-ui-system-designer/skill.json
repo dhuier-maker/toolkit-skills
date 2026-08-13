@@ -1,0 +1,39 @@
+{
+  "name": "toolkit-ui-system-designer",
+  "displayName": "Smart UI Designer",
+  "description": "智能 UI 设计开发助手，支持设计系统生成、后台管理模板、BI 大屏模板、移动端规范，覆盖 Vue3、Uni-app、React 等主流技术栈",
+  "version": "1.0.0",
+  "author": "hc-dev",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "ux",
+    "design",
+    "design-system",
+    "admin",
+    "dashboard",
+    "bi",
+    "mobile",
+    "vue3",
+    "uniapp",
+    "react"
+  ],
+  "platforms": [
+    "claude",
+    "cursor",
+    "windsurf",
+    "copilot"
+  ],
+  "features": {
+    "designSystem": true,
+    "adminTemplate": true,
+    "biDashboard": true,
+    "mobileSpec": true
+  },
+  "stacks": [
+    "vue3",
+    "uniapp",
+    "react",
+    "html-tailwind"
+  ]
+}

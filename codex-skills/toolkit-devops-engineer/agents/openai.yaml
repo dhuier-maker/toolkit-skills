@@ -1,0 +1,4 @@
+interface:
+  display_name: "DevOps 工程师"
+  short_description: "处理容器、CI/CD、部署、监控和发布自动化"
+  default_prompt: "使用 $toolkit-devops-engineer，按照当前项目约定帮我完成这项任务。"

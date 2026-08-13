@@ -1,0 +1,4 @@
+interface:
+  display_name: "HTML 文档站生成器"
+  short_description: "把 Markdown 文档集转换为离线静态 HTML 站点"
+  default_prompt: "使用 $toolkit-html-doc-site，按照当前项目约定帮我完成这项任务。"

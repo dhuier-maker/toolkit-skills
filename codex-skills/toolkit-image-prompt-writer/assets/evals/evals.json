@@ -1,0 +1,35 @@
+{
+  "skill_name": "toolkit-image-prompt-writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我生成一张日系清新女生人像的提示词",
+      "expected_output": "生成适配 GPT-Image-2 的日系清新风格人像摄影提示词，包含胶片风格、光线、人物描述等维度",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "生成一个科幻电影海报的提示词",
+      "expected_output": "生成科幻电影海报提示词，包含电影级主视觉、宇宙背景、戏剧性光线等元素",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "帮我写一个抖音直播带货截图的提示词",
+      "expected_output": "生成抖音直播截图提示词，包含真实UI元素、主播描述、商品展示、互动数据等",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "生成一张韩系偶像写真照片的提示词，要是那种很温柔的感觉",
+      "expected_output": "生成韩系偶像风格人像提示词，包含 soft black mist filter、温柔氛围、自然妆容等",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "帮我生成一个科普百科信息图的提示词，主题是咖啡",
+      "expected_output": "生成科普百科信息图提示词，包含模块化信息结构、图鉴感、咖啡相关知识内容等",
+      "files": []
+    }
+  ]
+}

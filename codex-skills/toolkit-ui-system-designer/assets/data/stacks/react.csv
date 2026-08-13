@@ -1,0 +1,16 @@
+Category,Guideline,Keywords,Description,Do,Don't,Code Good,Code Bad,Severity
+Components,函数组件,functional,使用函数组件和 Hooks,使用 const Component = () => {},使用 class 组件,const Button = () => <button>Click</button>,class Button extends React.Component {},HIGH
+Components,Props类型,props,使用 TypeScript 定义 props 类型,interface Props { title: string },使用 PropTypes,interface Props { title: string },Button.propTypes = { title: PropTypes.string },CRITICAL
+Hooks,useState,state,使用 useState 管理组件状态,const [count, setCount] = useState(0),直接修改状态变量,const [count, setCount] = useState(0),let count = 0; count++,CRITICAL
+Hooks,useEffect,effect,正确使用 useEffect 处理副作用,useEffect(() => { return cleanup }, [deps]),在渲染函数中执行副作用,useEffect(() => { fetchData() }, [id]),fetchData() in component body,HIGH
+Hooks,useCallback,callback,使用 useCallback 缓存回调,useCallback(() => {}, [deps]),每次渲染创建新函数,useCallback(() => handleClick(id), [id]),() => handleClick(id),MEDIUM
+Hooks,useMemo,memo,使用 useMemo 缓存计算结果,useMemo(() => compute(), [deps]),每次渲染重新计算,useMemo(() => expensiveCalc(), [data]),expensiveCalc() every render,MEDIUM
+Performance,React.memo,memo,使用 React.memo 避免不必要渲染,export default React.memo(Component),不使用 memo,export default React.memo(Button),export default Button,MEDIUM
+Performance,虚拟列表,virtual-list,长列表使用虚拟滚动,使用 react-window 或 react-virtualized,渲染全部列表项,<FixedSizeList height={400} itemCount={1000} />,<div>{items.map(item => <Item />)}</div>,HIGH
+State,状态管理,state-management,复杂状态使用 Zustand/Redux,使用 Zustand 或 Redux Toolkit,在组件中管理复杂状态,const useStore = create((set) => ({ count: 0 })),const [state, setState] = useState(complexState),HIGH
+Style,CSS-in-JS,styled,使用 styled-components 或 emotion,使用 styled.div``,使用内联样式,const Button = styled.button`padding: 8px`,<button style={{padding: '8px'}}>,MEDIUM
+Style,Tailwind,tailwind,使用 Tailwind CSS 实用类,使用 className="flex items-center",使用自定义 CSS,<div className="flex items-center">,<div className="custom-flex">,MEDIUM
+TypeScript,类型定义,typescript,为所有 props 和 state 定义类型,interface Props { },使用 any,interface Props { title: string; onClick: () => void },const props: any = {},CRITICAL
+TypeScript,泛型组件,generic,使用泛型提高组件复用性,function List<T>({ items }: { items: T[] }),使用 any 类型,function List<T>({ items }: { items: T[] }),function List({ items }: { items: any[] }),HIGH
+Patterns,复合组件,compound,使用复合组件模式,<Card><Card.Header /><Card.Body /></Card>,单一组件堆叠 props,<Card header="..." body="..." />,<Card header="..." body="..." />,MEDIUM
+Patterns,Render Props,render-props,使用 render props 实现逻辑复用,<List render={(item) => <Item item={item} />} />,硬编码渲染逻辑,<List render={renderItem} />,<List items={items} renderItem={...} />,LOW

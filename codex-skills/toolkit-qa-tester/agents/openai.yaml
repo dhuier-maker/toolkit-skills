@@ -1,0 +1,4 @@
+interface:
+  display_name: "QA 测试工程师"
+  short_description: "设计并执行黑盒测试，输出基于证据的 QA 报告"
+  default_prompt: "使用 $toolkit-qa-tester，按照当前项目约定帮我完成这项任务。"

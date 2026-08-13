@@ -1,0 +1,4 @@
+interface:
+  display_name: "BI 组件开发器"
+  short_description: "开发可配置、可复用的 BI 可视化组件"
+  default_prompt: "使用 $toolkit-bi-widget，按照当前项目约定帮我完成这项任务。"

@@ -1,0 +1,26 @@
+package com.funo.project.{module-name}.entity.{business};
+
+import lombok.Data;
+
+import jakarta.validation.constraints.NotBlank;
+
+/**
+ * {description} 数据传输对象
+ *
+ * @author author
+ */
+@Data
+public class {EntityName}DTO {
+
+    /**
+     * 主键
+     */
+    private Long id;
+
+    /**
+     * 业务字段示例（根据实际需求修改）
+     */
+    @NotBlank(message = "名称必填")
+    private String name;
+
+}

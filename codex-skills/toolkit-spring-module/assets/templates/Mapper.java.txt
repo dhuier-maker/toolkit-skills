@@ -1,0 +1,29 @@
+package com.funo.project.{module-name}.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.funo.project.{module-name}.entity.{business}.{EntityName};
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
+/**
+ * {description} Mapper 接口
+ *
+ * @author author
+ */
+@Repository
+public interface {EntityName}Mapper extends BaseMapper<{EntityName}> {
+
+    int deleteByPrimaryKey(Long id);
+
+    @Override
+    int insert({EntityName} record);
+
+    int insertSelective({EntityName} record);
+
+    {EntityName} selectByPrimaryKey(Long id);
+
+    int updateByPrimaryKeySelective({EntityName} record);
+
+    int updateByPrimaryKey({EntityName} record);
+
+}

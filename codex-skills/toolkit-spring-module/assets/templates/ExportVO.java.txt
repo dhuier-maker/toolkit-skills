@@ -1,0 +1,30 @@
+package com.funo.project.{module-name}.entity.{business};
+
+import cn.afterturn.easypoi.excel.annotation.Excel;
+import lombok.Data;
+
+import java.io.Serializable;
+
+/**
+ * {description} Excel导出对象
+ *
+ * @author author
+ */
+@Data
+public class {EntityName}ExcelVO implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * 名称
+     */
+    @Excel(name = "名称")
+    private String name;
+
+    /**
+     * 错误说明（导入时使用）
+     */
+    @Excel(name = "错误说明")
+    private String error;
+
+}

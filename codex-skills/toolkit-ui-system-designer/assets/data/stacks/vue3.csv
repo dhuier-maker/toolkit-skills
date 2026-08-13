@@ -1,0 +1,17 @@
+Category,Guideline,Keywords,Description,Do,Don't,Code Good,Code Bad,Severity
+Components,组合式API,composition,使用 Composition API 组织代码,使用 setup() 或 <script setup>,使用 Options API 混合写法,<script setup lang="ts">const count = ref(0)</script>,export default { data() { return { count: 0 } } },HIGH
+Components,Props定义,props,使用 TypeScript 定义 props,使用 defineProps<T>(),使用运行时 props 定义,const props = defineProps<{ title: string }>(),props: { title: String },HIGH
+Components,Emits定义,emits,使用 TypeScript 定义 emits,使用 defineEmits<T>(),使用运行时 emits 定义,const emit = defineEmits<{ (e: 'update', value: number): void }>(),emits: ['update'],HIGH
+Components,组件命名,component-name,组件使用 PascalCase 命名,MyComponent.vue,my-component.vue,-,-,MEDIUM
+State,响应式数据,reactive,使用 ref 和 reactive 创建响应式数据,ref 用于基本类型,reactive 用于对象,直接修改 props,const count = ref(0),let count = 0,HIGH
+State,状态管理,pinia,使用 Pinia 管理全局状态,定义 store 使用 defineStore,在组件中直接修改全局状态,const store = useCounterStore(),window.globalState = {},HIGH
+Performance,计算属性,computed,使用 computed 缓存计算结果,computed(() => expensive()),在模板中直接调用方法,<div>{{ computedValue }}</div>,<div>{{ expensiveMethod() }}</div>,MEDIUM
+Performance,侦听器,watch,使用 watchEffect 自动追踪依赖,watchEffect(() => { ... }),手动深度监听整个对象,watchEffect(() => console.log(count.value)),watch(count, () => {}, { deep: true }),MEDIUM
+Performance,虚拟列表,virtual-list,长列表使用虚拟滚动,使用 vue-virtual-scroller,渲染全部列表项,<VirtualScroller :items="list" />,<div v-for="item in largeList" />,-
+Template,v-for,v-for,使用 v-for 时必须绑定 key,使用唯一 id 作为 key,使用 index 作为 key,<div v-for="item in list" :key="item.id">,<div v-for="(item, index) in list" :key="index">,HIGH
+Template,v-if vs v-show,v-if,频繁切换用 v-show,条件很少改变用 v-if,频繁切换用 v-if,<div v-show="isVisible">,<div v-if="isVisible">,MEDIUM
+Template,插槽,slots,使用插槽提高组件灵活性,使用具名插槽和作用域插槽,硬编码内容,<slot name="header" :data="data" />,<div>固定标题</div>,MEDIUM
+Style,Scoped CSS,scoped,使用 scoped 避免样式污染,<style scoped>,全局样式污染,<style scoped>.btn { }</style>,<style>.btn { }</style>,MEDIUM
+Style,CSS变量,css-variables,使用 CSS 变量实现主题,:root { --primary: #1890ff },硬编码颜色值,var(--primary),#1890ff,LOW
+TypeScript,类型定义,typescript,为 props/emits 定义类型,使用 interface 或 type,使用 any,interface Props { title: string },const props: any = defineProps(),CRITICAL
+TypeScript,泛型组件,generic,使用泛型提高组件复用性,defineProps<T>(),any 类型,<script setup lang="ts" generic="T">,const data: any = [],HIGH

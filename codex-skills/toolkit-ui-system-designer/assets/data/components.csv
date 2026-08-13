@@ -1,0 +1,21 @@
+Component Name,Category,Stack,Props,Slots,Events,Usage Example,Notes
+Button,基础,Vue3,"type,size,disabled,loading,icon","default,icon","click","<Button type='primary' @click='handleClick'>提交</Button>",支持多种样式和尺寸
+Input,表单,Vue3,"value,placeholder,disabled,clearable,size","prefix,suffix","input,change,focus,blur","<Input v-model='value' placeholder='请输入' />",支持前后缀插槽
+Select,表单,Vue3,"value,options,multiple,filterable,disabled","default","change","<Select v-model='value' :options='options' />",支持多选和搜索
+Table,数据展示,Vue3,"data,columns,pagination,selection,loading","empty,footer","select,sort,filter","<Table :data='data' :columns='columns' />",支持虚拟滚动
+Form,表单,Vue3,"model,rules,label-width,inline","default","submit,validate","<Form :model='form' :rules='rules' />",支持表单验证
+Modal,反馈,Vue3,"visible,title,width,footer,mask-closable","default,footer","ok,cancel","<Modal v-model:visible='show' title='提示' />",支持自定义底部
+Drawer,反馈,Vue3,"visible,title,placement,width","default","close","<Drawer v-model:visible='show' placement='right' />",侧边抽屉
+Card,数据展示,Vue3,"title,extra,shadow,hoverable","title,extra,default","click","<Card title='标题' hoverable>内容</Card>",支持悬浮效果
+Tabs,导航,Vue3,"active-key,type,tab-position","tabPane","change","<Tabs v-model:activeKey='key'><TabPane tab='标签' /></Tabs>",支持多种样式
+Menu,导航,Vue3,"items,mode,theme,collapsed","default","select","<Menu :items='items' mode='inline' />",支持折叠
+Tree,数据展示,Vue3,"data,checkable,selectable,draggable","title","select,check,drag","<Tree :data='treeData' checkable />",支持拖拽
+Upload,表单,Vue3,"action,multiple,accept,limit,list-type","default","success,error,progress","<Upload action='/api/upload' />",支持拖拽上传
+DatePicker,表单,Vue3,"value,type,format,disabled-date","default","change","<DatePicker v-model='date' type='date' />",支持日期范围
+Pagination,导航,Vue3,"current,total,page-size,show-size-changer","default","change","<Pagination :current='1' :total='100' />",支持页码跳转
+Statistic,数据展示,Vue3,"title,value,precision,prefix,suffix","default","-","<Statistic title='用户数' :value='10000' />",数字动画效果
+Progress,反馈,Vue3,"percent,status,stroke-width,type","default","-","<Progress :percent='50' />",支持环形进度条
+Badge,数据展示,Vue3,"count,dot,overflow-count","default","-","<Badge :count='5'><Button /></Badge>",支持小红点
+Avatar,数据展示,Vue3,"src,size,shape,icon","default","-","<Avatar src='url' size='large' />",支持头像组
+Tooltip,反馈,Vue3,"title,placement,trigger","default","-","<Tooltip title='提示'><Button /></Tooltip>",支持多种触发方式
+Popover,反馈,Vue3,"title,content,placement,trigger","default","-","<Popover title='标题'><Button /></Popover>",气泡卡片

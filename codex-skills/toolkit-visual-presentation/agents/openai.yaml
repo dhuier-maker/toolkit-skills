@@ -1,0 +1,4 @@
+interface:
+  display_name: "视觉型演示文稿"
+  short_description: "创建视觉冲击力优先的图片型演示文稿"
+  default_prompt: "使用 $toolkit-visual-presentation，按照当前项目约定帮我完成这项任务。"

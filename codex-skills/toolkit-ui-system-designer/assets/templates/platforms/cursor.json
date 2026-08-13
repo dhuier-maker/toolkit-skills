@@ -1,0 +1,18 @@
+{
+  "platform": "cursor",
+  "displayName": "Cursor",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".cursor",
+    "skillPath": "skills/toolkit-ui-system-designer",
+    "filename": "SKILL.md"
+  },
+  "scriptPath": "scripts/search.py",
+  "frontmatter": {
+    "name": "toolkit-ui-system-designer",
+    "description": "智能 UI 设计开发助手。支持设计系统生成、后台管理模板、BI 大屏模板、移动端规范。Actions: 设计、创建、生成、审查、优化。Projects: 后台管理、BI大屏、移动端、原型。Stacks: Vue3、Uni-app、React、Tailwind。"
+  },
+  "title": "Smart UI Designer",
+  "description": "支持后台管理、BI 大屏、移动端开发的智能设计助手。",
+  "skillOrWorkflow": "Skill"
+}

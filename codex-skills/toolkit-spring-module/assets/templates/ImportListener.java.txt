@@ -1,0 +1,68 @@
+package com.funo.project.{module-name}.entity.{business}.listener;
+
+import com.alibaba.excel.context.AnalysisContext;
+import com.alibaba.excel.event.AnalysisEventListener;
+import com.alibaba.excel.metadata.CellExtra;
+import com.funo.project.common.util.EasyExcelUtil;
+import com.funo.project.{module-name}.entity.{business}.{EntityName}ImportDTO;
+import com.google.common.collect.Lists;
+import lombok.Data;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * {description} Excel导入监听器
+ *
+ * @author author
+ */
+@Data
+public class {EntityName}ImportListener extends AnalysisEventListener<{EntityName}ImportDTO> {
+
+    private List<{EntityName}ImportDTO> dataList = new ArrayList<>();
+    private Boolean isHeadCorrect = true;
+    private Integer count = 0;
+
+    private static final List<String> headList = Lists.newArrayList();
+    static {
+        headList.add("* 名称");
+        // 根据实际需求添加更多表头
+    }
+
+    public List<String> getHeadList() {
+        return headList;
+    }
+
+    @Override
+    public void onException(Exception exception, AnalysisContext context) throws Exception {
+        exception.printStackTrace();
+    }
+
+    @Override
+    public void invokeHeadMap(Map<Integer, String> headMap, AnalysisContext context) {
+        count++;
+        if (count == 2) {
+            this.isHeadCorrect = EasyExcelUtil.isCorrectHead(headMap, this.headList);
+        }
+    }
+
+    @Override
+    public void invoke({EntityName}ImportDTO data, AnalysisContext analysisContext) {
+        dataList.add(data);
+    }
+
+    @Override
+    public void extra(CellExtra extra, AnalysisContext context) {
+    }
+
+    @Override
+    public void doAfterAllAnalysed(AnalysisContext analysisContext) {
+    }
+
+    @Override
+    public boolean hasNext(AnalysisContext context) {
+        return true;
+    }
+
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "BI 大屏构建器"
+  short_description: "构建 BI 大屏、监控看板、GIS 和运营驾驶舱"
+  default_prompt: "使用 $toolkit-bi-dashboard，按照当前项目约定帮我完成这项任务。"

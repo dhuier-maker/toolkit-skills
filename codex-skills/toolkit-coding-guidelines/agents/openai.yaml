@@ -1,0 +1,4 @@
+interface:
+  display_name: "编码行为准则"
+  short_description: "用谨慎、精确、可验证的原则指导编码和重构"
+  default_prompt: "使用 $toolkit-coding-guidelines，按照当前项目约定帮我完成这项任务。"

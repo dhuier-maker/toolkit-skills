@@ -1,0 +1,9 @@
+.agents/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+

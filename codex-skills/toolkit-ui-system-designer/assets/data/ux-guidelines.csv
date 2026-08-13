@@ -1,0 +1,23 @@
+Category,Issue,Keywords,Description,Do,Don't,Severity
+Accessibility,颜色对比度,contrast,文本与背景对比度至少 4.5:1 (WCAG AA),使用对比度检查工具验证,使用低对比度颜色组合,CRITICAL
+Accessibility,焦点状态,focus,所有交互元素必须有可见的焦点状态,使用 outline 或 box-shadow 显示焦点,移除默认焦点样式,CRITICAL
+Accessibility,键盘导航,keyboard,支持完整的键盘导航和操作,Tab 顺序符合视觉顺序,阻止 Tab 导航,CRITICAL
+Accessibility,屏幕阅读器,screen-reader,为图片和图标提供 alt 文本,使用 aria-label 描述功能,图片无 alt 或 alt 为空,CRITICAL
+Accessibility,语义化标签,semantic,使用正确的 HTML 语义标签,使用 nav/main/section/article,全部使用 div,CRITICAL
+Interaction,触摸目标,touch-target,移动端触摸目标至少 44x44px,使用 padding 或 hitSlop 扩大点击区域,按钮过小或紧贴,HIGH
+Interaction,加载状态,loading,操作超过 1 秒显示加载状态,使用骨架屏或进度指示器,长时间无反馈,HIGH
+Interaction,错误处理,error,提供清晰的错误信息和恢复方案,显示具体错误原因和解决方法,只显示错误代码,HIGH
+Interaction,确认对话框,confirm,危险操作需要二次确认,显示操作后果和取消选项,直接执行删除等危险操作,HIGH
+Interaction,表单验证,validation,实时验证并提供明确反馈,失焦后验证,显示错误位置,提交后才显示错误,MEDIUM
+Performance,图片优化,image,使用 WebP/AVIF 格式,懒加载非首屏图片,使用原始大图,MEDIUM
+Performance,代码分割,code-splitting,按路由分割代码,使用动态 import,单个超大 bundle,MEDIUM
+Performance,虚拟列表,virtual-list,长列表使用虚拟滚动,使用 FlatList/VirtualList,渲染全部列表项,MEDIUM
+Performance,防抖节流,debounce,高频事件使用防抖/节流,使用 lodash.debounce 或自定义,每次触发都执行,MEDIUM
+Layout,响应式,responsive,支持多屏幕尺寸适配,使用 rem/vw 和媒体查询,固定像素宽度,HIGH
+Layout,安全区域,safe-area,移动端避开刘海和底部手势区,使用 SafeAreaView 或 env(safe-area-inset-*),内容被遮挡,HIGH
+Layout,滚动容器,scroll,避免嵌套滚动冲突,单一主滚动容器,多层嵌套滚动,MEDIUM
+Layout,固定元素,fixed,固定元素不遮挡内容,使用 padding-top 预留空间,内容被固定元素遮挡,MEDIUM
+Typography,字体大小,font-size,正文最小 16px,使用相对单位 rem,字体小于 12px,MEDIUM
+Typography,行高,line-height,正文行高 1.5-1.75,使用 1.5 或 1.6,行高过小或过大,LOW
+Animation,动画时长,duration,微交互 150-300ms,使用 ease-out 进入 ease-in 退出,动画过快或过慢,MEDIUM
+Animation,减少动画,reduced-motion,尊重 prefers-reduced-motion,检测并禁用动画,忽略用户偏好,MEDIUM

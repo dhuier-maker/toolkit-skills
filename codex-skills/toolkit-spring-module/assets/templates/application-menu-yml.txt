@@ -1,0 +1,9 @@
+cmiot:
+  menu:
+    navigator:
+      slices:
+        #====================================== {description} ======================================
+        - navigator: {module-name}
+          items:
+            - code: {module-name}Manage
+              name: {description}管理

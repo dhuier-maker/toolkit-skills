@@ -1,0 +1,11 @@
+Spec Name,Platform,Category,Guidelines,Do,Don't,Code Example
+触摸目标,iOS/Android,Interaction,"最小触摸区域 44x44pt (iOS) / 48x48dp (Android)","使用 hitSlop 扩大点击区域,按钮间距 >= 8pt","触摸区域过小,按钮紧贴",<Button hitSlop={{top: 10, bottom: 10, left: 10, right: 10}} />
+安全区域,iOS/Android,Layout,"避免内容被刘海/底部手势区域遮挡","使用 SafeAreaView,底部导航留出安全距离","内容延伸到刘海区域,底部按钮被手势栏遮挡",<SafeAreaView style={{flex: 1}} />
+字体大小,iOS/Android,Typography,"正文最小 16px,标题 20-32px","使用系统字体,支持动态字体大小","字体小于 12px,使用固定字体大小",fontSize: 16 // minimum for body
+导航模式,iOS/Android,Navigation,"iOS 底部 Tab,Android 顶部/底部导航","遵循平台导航规范,导航项 <= 5 个","混合使用不同导航模式,导航项过多",<TabBar items={[...]} maxItems={5} />
+列表滚动,iOS/Android,Interaction,"支持下拉刷新,上拉加载,惯性滚动","使用 FlatList/SectionList,虚拟化长列表","使用 ScrollView 渲染长列表,阻止默认滚动行为",<FlatList data={data} renderItem={renderItem} />
+表单输入,iOS/Android,Form,"输入框高度 >= 44px,支持键盘避让","使用 KeyboardAvoidingView,显示清除按钮","输入框过小,键盘遮挡输入框",<TextInput style={{height: 44}} />
+加载状态,iOS/Android,Feedback,"加载时间 > 1s 显示进度,> 3s 显示取消按钮","使用骨架屏,显示加载进度","长时间白屏,无加载提示",<Skeleton loading={isLoading} />
+错误处理,iOS/Android,Feedback,"错误信息清晰,提供重试选项","显示具体错误原因,提供解决方案","只显示错误代码,无重试选项",<ErrorBanner message={error} onRetry={retry} />
+深色模式,iOS/Android,Theme,"支持系统深色模式切换,保持对比度","使用语义化颜色变量,测试深色模式对比度","硬编码颜色,深色模式下对比度不足",const color = useColorScheme() === 'dark' ? '#fff' : '#000'
+无障碍,iOS/Android,Accessibility,"支持屏幕阅读器,提供无障碍标签","使用 accessibilityLabel,支持 VoiceOver/TalkBack","图片无描述,按钮无标签",<Button accessibilityLabel="提交表单" />

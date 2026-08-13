@@ -1,0 +1,4 @@
+interface:
+  display_name: "提示词编写器"
+  short_description: "根据粗略目标从零编写清晰、可执行的提示词"
+  default_prompt: "使用 $toolkit-prompt-writer，按照当前项目约定帮我完成这项任务。"

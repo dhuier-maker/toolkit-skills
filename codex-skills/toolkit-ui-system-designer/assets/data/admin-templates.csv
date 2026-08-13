@@ -1,0 +1,9 @@
+Template Name,Stack,Features,Layout,Components,Demo URL,Notes
+经典后台模板,Vue3,"侧边栏导航,顶部工具栏,标签页,面包屑",Sidebar+Header+Content,"Table,Form,Modal,Drawer",/demo/admin-classic,适用于大多数后台管理系统
+顶部导航模板,Vue3,"顶部水平导航,无侧边栏,全宽布局",Header+Content,"Navbar,Card,Table",/demo/admin-topnav,适用于功能较少的管理系统
+双栏布局模板,Vue3,"左侧菜单+右侧内容,支持折叠",Sidebar+Content,"Menu,Tree,Table",/demo/admin-dual,适用于内容较多的管理系统
+仪表盘模板,Vue3,"数据卡片,图表区域,快捷操作",Dashboard,"Card,Chart,Statistic",/demo/admin-dashboard,适用于数据展示型后台
+表单密集型模板,Vue3,"多步骤表单,表单验证,批量操作",Form+Table,"Form,Wizard,Table",/demo/admin-form,适用于数据录入型后台
+内容管理模板,Vue3,"富文本编辑,图片上传,分类管理",Editor+List,"Editor,Upload,Tree",/demo/admin-cms,适用于CMS内容管理系统
+权限管理模板,Vue3,"角色管理,权限配置,用户管理",Tree+Table,"Tree,Transfer,Table",/demo/admin-rbac,适用于RBAC权限系统
+数据报表模板,Vue3,"报表配置,数据导出,图表展示",Report,"Chart,Table,Export",/demo/admin-report,适用于报表统计系统

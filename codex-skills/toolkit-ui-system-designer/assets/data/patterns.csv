@@ -1,0 +1,11 @@
+Pattern Name,Category,Use Case,Structure,Best Practices,Anti Patterns
+侧边栏导航布局,Layout,后台管理系统,"Sidebar(固定宽度) + Header(全宽) + Content(自适应)","侧边栏可折叠,支持响应式,面包屑导航","侧边栏过宽,导航层级过深"
+顶部导航布局,Layout,功能较少的管理系统,"Header(全宽导航) + Content(全宽)","导航项 <= 7,支持下拉菜单,搜索功能","导航项过多,无分组"
+仪表盘布局,Layout,数据展示型后台,"Header + Stats Cards + Charts Grid + Quick Actions","关键数据置顶,图表响应式,快捷操作明显","数据过密,无重点"
+表单密集布局,Layout,数据录入型后台,"Header + Form Area(多步骤) + Preview/Actions","分步表单,实时验证,保存草稿","单页过长表单,无进度提示"
+三栏布局,Layout,BI大屏,"Left(数据卡片) + Center(主图表/地图) + Right(辅助图表)","中间区域突出,左右对称,数据实时刷新","左右过宽,中间过小"
+网格布局,Layout,数据可视化大屏,"Grid(24列) + 各区域按比例分配","使用 CSS Grid,支持响应式,区域可配置","固定像素布局,不支持缩放"
+移动端Tab导航,Navigation,移动端应用,"Header + Content + TabBar(底部固定)","Tab <= 5,图标+文字,当前页高亮","Tab过多,无文字标签"
+移动端单页,Navigation,简单移动端页面,"Header(可选) + Content(全屏) + Action Button(固定底部)","内容简洁,底部操作明显,支持返回","底部按钮遮挡内容"
+卡片列表布局,Content,信息流/内容展示,"Header + Card Grid(响应式) + Pagination","卡片统一样式,支持加载更多,骨架屏","卡片样式不一致,无加载状态"
+详情页布局,Content,详情展示,"Header(返回+标题) + Info Section + Related Section","信息分组,关键信息置顶,操作按钮明显","信息堆砌,无分组"

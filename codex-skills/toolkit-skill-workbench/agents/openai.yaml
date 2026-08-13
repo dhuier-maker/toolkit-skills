@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill 工作台"
+  short_description: "创建、修改并验证可移植的 Codex Skill"
+  default_prompt: "使用 $toolkit-skill-workbench，按照当前项目约定帮我完成这项任务。"

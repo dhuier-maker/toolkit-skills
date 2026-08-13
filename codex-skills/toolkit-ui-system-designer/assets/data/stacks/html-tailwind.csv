@@ -1,0 +1,21 @@
+Category,Guideline,Keywords,Description,Do,Don't,Code Good,Code Bad,Severity
+Layout,容器宽度,container,使用 container 类限制最大宽度,container mx-auto,固定像素宽度,<div class="container mx-auto">,<div style="width: 1200px">,MEDIUM
+Layout,响应式断点,breakpoint,使用响应式前缀适配不同屏幕,sm: md: lg: xl:,固定布局,<div class="sm:flex md:grid">,<div class="flex">,HIGH
+Layout,Grid布局,grid,使用 Grid 实现复杂布局,grid grid-cols-3 gap-4,手动计算宽度,<div class="grid grid-cols-3 gap-4">,<div style="display: flex; width: 33%">,MEDIUM
+Flexbox,弹性布局,flex,使用 Flexbox 实现灵活布局,flex items-center justify-between,float 布局,<div class="flex items-center justify-between">,<div style="float: left">,HIGH
+Flexbox,间距,gap,使用 gap 设置子元素间距,gap-4 gap-x-2 gap-y-4,margin 负值技巧,<div class="flex gap-4">,<div class="flex -mx-2"><div class="mx-2">,MEDIUM
+Spacing,内边距,padding,使用 p- pt- px- 等间距类,p-4 px-6 py-2,自定义 padding 值,<div class="p-4">,<div style="padding: 16px">,MEDIUM
+Spacing,外边距,margin,使用 m- mt- mx- 等间距类,m-4 mx-auto mt-8,自定义 margin 值,<div class="mx-auto">,<div style="margin: 0 auto">,MEDIUM
+Typography,字体大小,font-size,使用 text- 类控制字体大小,text-sm text-lg text-2xl,自定义字体大小,<p class="text-lg">,<p style="font-size: 18px">,MEDIUM
+Typography,字体粗细,font-weight,使用 font- 类控制字体粗细,font-bold font-medium,自定义 font-weight,<span class="font-bold">,<span style="font-weight: 700">,LOW
+Typography,文本颜色,text-color,使用 text- 类设置文本颜色,text-gray-900 text-blue-500,自定义颜色值,<p class="text-gray-900">,<p style="color: #111827">,MEDIUM
+Colors,背景色,background,使用 bg- 类设置背景色,bg-white bg-gray-100,自定义背景色,<div class="bg-white">,<div style="background: #fff">,MEDIUM
+Colors,边框色,border-color,使用 border- 类设置边框色,border-gray-200,自定义边框色,<div class="border border-gray-200">,<div style="border-color: #e5e7eb">,MEDIUM
+Effects,阴影,shadow,使用 shadow- 类添加阴影,shadow-md shadow-lg,自定义 box-shadow,<div class="shadow-md">,<div style="box-shadow: 0 4px 6px rgba(0,0,0,0.1)">,MEDIUM
+Effects,圆角,border-radius,使用 rounded- 类设置圆角,rounded-lg rounded-full,自定义 border-radius,<div class="rounded-lg">,<div style="border-radius: 8px">,LOW
+Effects,过渡,transition,使用 transition 类添加动画,transition duration-300,自定义 transition,<button class="transition duration-300">,<button style="transition: all 0.3s">,MEDIUM
+States,悬停状态,hover,使用 hover: 前缀定义悬停样式,hover:bg-blue-600,JavaScript 控制样式,<button class="hover:bg-blue-600">,<button onmouseover="this.style.background='blue'">,HIGH
+States,焦点状态,focus,使用 focus: 前缀定义焦点样式,focus:ring-2 focus:outline-none,移除焦点样式,<input class="focus:ring-2 focus:ring-blue-500">,<input class="outline-none">,CRITICAL
+States,禁用状态,disabled,使用 disabled: 前缀定义禁用样式,disabled:opacity-50 disabled:cursor-not-allowed,JavaScript 控制样式,<button class="disabled:opacity-50">,<button style="opacity: 0.5">,HIGH
+Responsive,移动优先,mobile-first,默认移动端样式,桌面端用响应式前缀,默认桌面端样式,<div class="text-sm md:text-base">,<div class="text-base sm:text-sm">,HIGH
+Accessibility,屏幕阅读器,sr-only,使用 sr-only 隐藏但保留可访问性,sr-only,display: none,<span class="sr-only">隐藏文本</span>,<span style="display: none">隐藏文本</span>,CRITICAL

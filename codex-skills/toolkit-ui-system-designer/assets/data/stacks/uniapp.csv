@@ -1,0 +1,17 @@
+Category,Guideline,Keywords,Description,Do,Don't,Code Good,Code Bad,Severity
+Platform,条件编译,conditional,使用条件编译区分平台,#ifdef MP-WEIXIN,使用 if-else 判断平台,#ifdef MP-WEIXIN /* 微信小程序代码 */ #endif,if (platform === 'wechat') { },CRITICAL
+Platform,API封装,api,封装 uni API 保证跨平台兼容,使用 uni.xxx API,使用平台特定 API,uni.request({ url }),wx.request({ }),HIGH
+Platform,单位适配,unit,使用 rpx 实现响应式,使用 rpx 或 upx,使用 px 固定宽度,width: 750rpx,width: 375px,HIGH
+Platform,安全区域,safe-area,适配刘海屏和底部安全区,使用 env(safe-area-inset-*),忽略安全区域,padding-bottom: env(safe-area-inset-bottom),padding-bottom: 0,HIGH
+Navigation,页面跳转,navigation,使用 uni.navigateTo 等路由 API,使用 uni.navigateTo/switchTab,使用 a 标签,uni.navigateTo({ url: '/pages/detail' }),<a href="/pages/detail">,HIGH
+Navigation,TabBar,tabbar,配置 pages.json 中的 tabBar,tabBar.list <= 5,自定义 TabBar 实现,配置 pages.json tabBar,手动实现 TabBar,MEDIUM
+Components,视图容器,view,使用 view 替代 div,使用 view/text/image,使用 div/span/img,<view class="container">,<div class="container">,CRITICAL
+Components,列表渲染,list,使用 v-for 渲染列表,使用 :key 绑定唯一值,使用 index 作为 key,<view v-for="item in list" :key="item.id">,<view v-for="(item, index) in list" :key="index">,HIGH
+Components,表单组件,form,使用 uni 内置表单组件,使用 uni-forms/uni-easyinput,使用原生 form,<uni-forms ref="form">,<form>,MEDIUM
+Style,全局样式,global,在 App.vue 定义全局样式,使用 @import 导入,在页面重复定义样式,@import "@/styles/common.scss",每个页面复制相同样式,MEDIUM
+Style,主题变量,theme,使用 SCSS 变量管理主题,$primary-color: #1890ff,硬编码颜色值,color: $primary-color,color: #1890ff,LOW
+Performance,分包加载,subpackages,使用分包优化小程序体积,在 pages.json 配置 subPackages,所有页面放主包,subPackages: [{ root: 'pagesA' }],所有页面在主包,CRITICAL
+Performance,图片优化,image,使用 webp 格式和懒加载,image lazy-load,使用大图不压缩,<image lazy-load :src="url" />,<image :src="largePng" />,MEDIUM
+Performance,数据缓存,storage,使用 uni.setStorage 缓存数据,uni.setStorageSync,每次请求接口,uni.setStorageSync('key', data),每次都请求 API,MEDIUM
+Lifecycle,页面生命周期,lifecycle,正确使用页面生命周期,onLoad/onShow/onReady,在 created/mounted 中获取参数,onLoad(options) { this.id = options.id },created() { /* 无法获取路由参数 */ },HIGH
+Lifecycle,下拉刷新,pull-down,启用下拉刷新功能,pages.json 配置 enablePullDownRefresh,自定义下拉刷新,enablePullDownRefresh: true,手动实现下拉刷新,MEDIUM

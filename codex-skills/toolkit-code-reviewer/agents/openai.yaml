@@ -1,0 +1,4 @@
+interface:
+  display_name: "代码审查专家"
+  short_description: "审查代码的正确性、安全性、性能和回归风险"
+  default_prompt: "使用 $toolkit-code-reviewer，按照当前项目约定帮我完成这项任务。"

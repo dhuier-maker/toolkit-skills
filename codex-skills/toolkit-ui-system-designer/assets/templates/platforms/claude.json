@@ -1,0 +1,21 @@
+{
+  "platform": "claude",
+  "displayName": "Codex",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".claude",
+    "skillPath": "skills/toolkit-ui-system-designer",
+    "filename": "SKILL.md"
+  },
+  "scriptPath": "scripts/search.py",
+  "frontmatter": {
+    "name": "toolkit-ui-system-designer",
+    "description": "智能 UI 设计开发助手。支持设计系统生成、后台管理模板、BI 大屏模板、移动端规范。Actions: 设计、创建、生成、审查、优化。Projects: 后台管理、BI大屏、移动端、原型。Stacks: Vue3、Uni-app、React、Tailwind。Elements: 表格、表单、图表、导航、弹窗。Styles: 现代简约、科技暗黑、极简移动。Topics: 配色、布局、组件、无障碍、响应式。"
+  },
+  "sections": {
+    "quickReference": true
+  },
+  "title": "Smart UI Designer - 智能 UI 设计开发助手",
+  "description": "支持后台管理、BI 大屏、移动端开发的智能设计助手。包含设计系统生成、模板推荐、组件指南、技术栈规范。",
+  "skillOrWorkflow": "Skill"
+}

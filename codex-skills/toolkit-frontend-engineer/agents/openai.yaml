@@ -1,0 +1,4 @@
+interface:
+  display_name: "前端工程师"
+  short_description: "实现 Vue、React 和 TypeScript 生产级前端"
+  default_prompt: "使用 $toolkit-frontend-engineer，按照当前项目约定帮我完成这项任务。"

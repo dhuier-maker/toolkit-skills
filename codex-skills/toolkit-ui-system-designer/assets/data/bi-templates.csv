@@ -1,0 +1,9 @@
+Template Name,Layout,Chart Types,Features,Tech Stack,Demo URL,Notes
+智慧城市大屏,Grid 24列,"地图,柱状图,折线图,饼图,雷达图","实时数据,3D效果,粒子背景",Vue3+ECharts,/demo/bi-city,城市运行监控大屏
+工业监控大屏,Grid 12列,"仪表盘,温度计,趋势图,状态图","设备状态,告警提示,实时刷新",Vue3+ECharts,/demo/bi-industry,工业设备监控
+金融数据大屏,Grid 24列,"K线图,热力图,地图,柱状图","实时行情,数据滚动,预警提示",Vue3+ECharts,/demo/bi-finance,金融数据监控
+交通监控大屏,Grid 16列,"地图,流量图,状态图,趋势图","实时路况,车辆追踪,拥堵预警",Vue3+ECharts,/demo/bi-traffic,交通运行监控
+能源监控大屏,Grid 12列,"仪表盘,柱状图,饼图,趋势图","能耗统计,实时监控,节能分析",Vue3+ECharts,/demo/bi-energy,能源消耗监控
+医疗数据大屏,Grid 24列,"地图,柱状图,饼图,趋势图","床位统计,患者分布,疫情监控",Vue3+ECharts,/demo/bi-medical,医疗资源监控
+教育数据大屏,Grid 16列,"地图,柱状图,饼图,雷达图","学生分布,成绩分析,资源统计",Vue3+ECharts,/demo/bi-education,教育数据展示
+电商数据大屏,Grid 24列,"地图,柱状图,饼图,漏斗图","销售数据,用户分布,转化漏斗",Vue3+ECharts,/demo/bi-ecommerce,电商运营监控
