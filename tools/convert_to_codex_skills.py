@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT.parent / "海川参考" / "skills"
-OUTPUT = ROOT / "codex-skills"
+OUTPUT = ROOT / "toolkit-skills"
 INIT = Path(r"C:\Users\林圣颖\.codex\skills\.system\skill-creator\scripts\init_skill.py")
 
 

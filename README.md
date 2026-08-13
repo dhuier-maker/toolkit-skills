@@ -6,7 +6,7 @@
 
 ```text
 toolkit-skills/
-├── codex-skills/   # 27 个 Codex Skill 候选包
+├── toolkit-skills/ # 27 个 Codex Skill 候选包
 └── tools/          # 转换和中文化工具
 ```
 
@@ -62,7 +62,7 @@ $toolkit-delivery-workflow 完整开发并验证这个功能
 
 ## Skill 清单
 
-完整清单和说明见 [Codex Skill 转换报告](codex-skills/CONVERSION_REPORT.md)。
+完整清单和说明见 [Codex Skill 转换报告](toolkit-skills/CONVERSION_REPORT.md)。
 
 ## 注意事项
 

@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILLS_ROOT = ROOT / "codex-skills"
+SKILLS_ROOT = ROOT / "toolkit-skills"
 
 
 SKILLS = {
