@@ -1,4 +1,0 @@
-interface:
-  display_name: "Skill 评估器"
-  short_description: "评估 Skill 的触发、结构、冲突和输出效果"
-  default_prompt: "使用 $toolkit-skill-evaluator，按照当前项目约定帮我完成这项任务。"

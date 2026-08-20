@@ -1,4 +1,4 @@
 interface:
-  display_name: "体验设计师"
-  short_description: "创建高保真 HTML 原型、交互演示和动效设计"
-  default_prompt: "使用 $toolkit-experience-designer，按照当前项目约定帮我完成这项任务。"
+  display_name: "前端体验设计师"
+  short_description: "评审和优化 Web 前端页面的交互体验、可访问性与视觉一致性"
+  default_prompt: "检查当前前端页面的体验、可访问性和视觉一致性，并给出可执行改进。"

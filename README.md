@@ -1,72 +1,57 @@
 # Toolkit Skills
 
-一套面向 Codex 的通用项目技能工具箱，包含 27 个可独立使用的 Skill，覆盖需求分析、架构设计、前后端开发、代码审查、测试、DevOps、UI 原型、BI 大屏、图表、演示文稿、提示词和 MCP 开发等场景。
+面向 Codex 的前端研发 Skill 工具箱。当前版本聚焦前端实现、UI/UX、数据大屏、代码审查、QA 和交付，共包含 13 个可独立安装的 Skill。
 
-## 目录结构
+仓库地址：https://github.com/dhuier-maker/toolkit-skills
+
+## 能力范围
+
+| Skill | 作用 |
+|---|---|
+| `toolkit-frontend-engineer` | 按当前技术栈实现和重构前端页面、组件、路由、状态及接口调用 |
+| `toolkit-experience-designer` | 评审交互体验、信息层级、响应式表现和可访问性 |
+| `toolkit-ui-system-designer` | 建立和维护颜色、字体、间距、布局及组件状态规范 |
+| `toolkit-rapid-ui-prototyper` | 将需求快速转换为可运行的前端原型 |
+| `toolkit-bi-dashboard` | 构建运营驾驶舱、数据大屏和监控看板 |
+| `toolkit-bi-widget` | 开发图表、地图、KPI 卡片等可复用可视化组件 |
+| `toolkit-visual-asset-generator` | 生成前端需要的图标、背景、PNG 和 SVG 素材 |
+| `toolkit-code-reviewer` | 审查前端正确性、安全性、性能、可维护性和回归风险 |
+| `toolkit-qa-tester` | 设计并执行页面、交互、兼容性和回归测试 |
+| `toolkit-test-coordinator` | 协调缺陷分类、修复、复测和退出条件 |
+| `toolkit-delivery-workflow` | 组织从任务拆解到构建、验证和发布的前端交付流程 |
+| `toolkit-coding-guidelines` | 提供谨慎、可验证的通用编码准则 |
+| `toolkit-codex-project-bootstrap` | 为前端仓库建立项目级 Codex 协作说明 |
+
+后端、Spring、MCP、提示词、演示文稿、通用图表和文档站等非前端 Skill 已从当前成品包移除。
+
+## 目录
 
 ```text
 toolkit-skills/
-├── toolkit-skills/ # 27 个 Codex Skill 候选包
-└── tools/          # 转换和中文化工具
+├── toolkit-skills/       # 13 个前端研发 Skill
+├── tools/                # 转换与中文化工具
+├── INSTALL.md            # 安装、更新和卸载说明
+├── RELEASE.md            # 版本与发布规范
+└── CHANGELOG.md          # 版本变更记录
 ```
 
-每个 Skill 通常包含：
+## 快速安装
 
-- `SKILL.md`：中文触发描述和操作说明
-- `agents/openai.yaml`：Codex 界面元数据和默认提示
-- `references/`：按需读取的详细领域说明
-- `scripts/`：可选执行脚本
-- `assets/`：可选模板、图标和素材
+项目级安装只对当前项目生效。以代码审查 Skill 为例：
 
-## 使用方式
+```powershell
+New-Item -ItemType Directory -Force .agents\skills | Out-Null
+Copy-Item -Recurse toolkit-skills\toolkit-code-reviewer .agents\skills\
+```
 
-### 项目级安装
-
-将需要的 Skill 目录复制到目标项目的：
+在 Codex 中调用：
 
 ```text
-<项目根目录>/.agents/skills/
+$toolkit-code-reviewer 审查当前前端改动，并按严重程度输出问题和验证建议。
 ```
 
-例如：
+完整安装和更新方式见 [INSTALL.md](INSTALL.md)。建议按任务选择 Skill，不要无差别安装全部目录。
 
-```text
-<项目根目录>/.agents/skills/toolkit-code-reviewer/
-```
+## 版本
 
-项目级 Skill 只对该项目生效。
-
-### 用户级安装
-
-将需要的 Skill 目录复制到：
-
-```text
-~/.agents/skills/
-```
-
-用户级 Skill 可供本机所有 Codex 项目使用。
-
-### 调用示例
-
-```text
-$toolkit-code-reviewer 审查当前项目代码
-```
-
-```text
-$toolkit-requirements-analyst 把这个产品想法整理成 PRD
-```
-
-```text
-$toolkit-delivery-workflow 完整开发并验证这个功能
-```
-
-## Skill 清单
-
-完整清单和说明见 [Codex Skill 转换报告](toolkit-skills/CONVERSION_REPORT.md)。
-
-## 注意事项
-
-- 建议按项目需要选择 Skill，不必一次启用全部 27 个。
-- 部分 Skill 带有 Python、Node.js 或外部工具依赖，使用前应检查对应脚本和当前运行环境。
-- 目录名和 `$toolkit-*` 调用名保持英文，面向用户的说明采用中文。
-- 各子目录中已有的许可证文件应随对应 Skill 一并保留。
+当前整理版本：`0.2.0`。发布规则见 [RELEASE.md](RELEASE.md)，变更见 [CHANGELOG.md](CHANGELOG.md)。

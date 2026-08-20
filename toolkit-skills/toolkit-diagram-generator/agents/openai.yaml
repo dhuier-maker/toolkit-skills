@@ -1,4 +1,0 @@
-interface:
-  display_name: "专业图表生成器"
-  short_description: "生成架构图、UML、流程图和数据可视化"
-  default_prompt: "使用 $toolkit-diagram-generator，按照当前项目约定帮我完成这项任务。"

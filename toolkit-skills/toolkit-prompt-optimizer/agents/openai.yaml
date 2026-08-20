@@ -1,4 +1,0 @@
-interface:
-  display_name: "提示词优化器"
-  short_description: "分析并优化已有提示词的结构、约束和可靠性"
-  default_prompt: "使用 $toolkit-prompt-optimizer，按照当前项目约定帮我完成这项任务。"

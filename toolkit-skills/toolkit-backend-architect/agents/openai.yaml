@@ -1,4 +1,0 @@
-interface:
-  display_name: "后端架构师"
-  short_description: "设计后端架构、API、数据模型和生产级服务端实现"
-  default_prompt: "使用 $toolkit-backend-architect，按照当前项目约定帮我完成这项任务。"
